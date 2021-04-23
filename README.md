@@ -51,3 +51,37 @@ Returns pointer to parent object in hierarchical tree.
 This method uses recursive call through pointer in array of subordinate objects.
 ### Return
 Pointer to parent object in hierarchical tree 
+
+### [std::string BaseClass::getName()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L41)
+### Description
+Returns object name.
+### Parameters
+No
+### Return
+Object name  
+
+### [void BaseClass::setName(std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L36)
+### Description
+Sets name to the object.
+### Parameters
+1. name	- object name
+### Return
+No
+
+### [void BaseClass::setReady(int ready)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L31)
+### Description
+Sets ready state to the object.
+### Parameters
+1. ready	- ready state
+### Return
+No
+
+### [void BaseClass::show()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L46)
+### Description
+Prints objects and their ready state.
+### Parameters
+No
+### Note
+This method uses recursive call through pointer in array of subordinate objects.
+### Return
+No
