@@ -102,3 +102,24 @@ Starts algorithm of setting data and hierarchical tree construction.
 No
 ### Return
 No
+
+## In RootClass class
+### [void RootClass::showTree()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L57)
+### Description
+Calls method to construct hierarchical object tree.
+### Parameters
+No
+### Note
+This method prints "Object tree" before calling method to construct hierarchical object tree.
+### Return
+No
+
+### [void RootClass::start()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L8)
+### Description
+Starts algorithm of setting data for hierarchical tree construction.
+### Parameters
+No
+### Note
+Algorithm is almost same as in previous task, all 5 classes was used.
+### Return
+No
