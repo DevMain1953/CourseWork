@@ -22,3 +22,11 @@ Creates root object in the hierarchy, if such object already exists, creates sub
 2. name	- object name 
 ### Return
 No
+
+### [BaseClass::~BaseClass()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L23)
+### Description
+Removes subordinate objects .
+### Parameters
+No
+### Return
+No
