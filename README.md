@@ -25,8 +25,19 @@ No
 
 ### [BaseClass::~BaseClass()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L23)
 ### Description
-Removes subordinate objects .
+Removes subordinate objects.
 ### Parameters
 No
+### Return
+No
+
+### [void BaseClass::ConstructTree(BaseClass* parent, int space)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L86)
+### Description
+Constructs and prints hierarchical tree.
+### Parameters
+1. parent	- pointer to parent object 
+2. space	- number of spaces in hierarchical tree before branch 
+### Note
+This method uses recursive call through pointer in array of subordinate objects.
 ### Return
 No
