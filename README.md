@@ -13,3 +13,12 @@ Creates root object in the hierarchy, if such object already exists, creates sub
 1. parent	- pointer to parent object 
 ### Return
 No
+
+### [BaseClass::BaseClass(BaseClass* parent, std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L13)
+### Description
+Creates root object in the hierarchy, if such object already exists, creates subordinate object and sets name to it.
+### Parameters
+1. parent	- pointer to parent object 
+2. name	- object name 
+### Return
+No
