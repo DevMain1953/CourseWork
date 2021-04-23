@@ -85,3 +85,20 @@ No
 This method uses recursive call through pointer in array of subordinate objects.
 ### Return
 No
+
+## In FirstClass class
+### [void FirstClass::printResults()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/FirstClass.cpp#L39)
+### Description
+Prints result, calls 'show' method.
+### Parameters
+No
+### Return
+No
+
+### [void FirstClass::start()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/FirstClass.cpp#L6)
+### Description
+Starts algorithm of setting data and hierarchical tree construction.
+### Parameters
+No
+### Return
+No
