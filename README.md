@@ -6,7 +6,7 @@ This repository contains course work project. This readme file contains API docu
 
 ## API docs
 In BaseClass class
-## [BaseClass::BaseClass(BaseClass* parent)](https://github.com/Pirate1953/Online-Store/blob/master/app/Http/Controllers/Auth/ConfirmablePasswordController.php#L19)
+### [BaseClass::BaseClass(BaseClass* parent)](https://github.com/Pirate1953/Online-Store/blob/master/app/Http/Controllers/Auth/ConfirmablePasswordController.php#L19)
 ### Description
 Creates root object in the hierarchy, if such object already exists, creates subordinate object.
 ### Parameters
