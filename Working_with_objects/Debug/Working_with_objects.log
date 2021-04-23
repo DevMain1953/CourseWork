@@ -1,0 +1,10 @@
+﻿  BaseClass.cpp
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(25,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(58,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(74,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(93,20): warning C4018: '<': signed/unsigned mismatch
+  FirstClass.cpp
+  main.cpp
+  RootClass.cpp
+  Generating Code...
+  Working_with_objects.vcxproj -> C:\Users\sergey\Desktop\CourseWork\Debug\Working_with_objects.exe
