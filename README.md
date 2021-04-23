@@ -41,3 +41,13 @@ Constructs and prints hierarchical tree.
 This method uses recursive call through pointer in array of subordinate objects.
 ### Return
 No
+
+### [BaseClass* BaseClass::find(std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L65)
+### Description
+Returns pointer to parent object in hierarchical tree.
+### Parameters
+1. name	- object name to find
+### Note
+This method uses recursive call through pointer in array of subordinate objects.
+### Return
+Pointer to parent object in hierarchical tree 
