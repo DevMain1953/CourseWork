@@ -19,7 +19,7 @@ public:
 	/**
 	*	Calls method to print hierarchical object tree
 	*
-	*	@note This method prints "Object tree" before calling method to construct hierarchical object tree
+	*	@note This method prints "Object tree" before calling method to print hierarchical object tree
 	*/
 	void showTree();
 };
