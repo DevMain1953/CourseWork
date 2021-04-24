@@ -57,12 +57,12 @@ public:
 	void setName(std::string name);
 
 	/**
-	*	Returns pointer to parent object in hierarchical tree
+	*	Returns pointer to object in hierarchical tree
 	*
 	*	@param name - object name to find
 	*	@note This method uses recursive call through pointer in array of subordinate objects
 	*
-	*	@return pointer to parent object in hierarchical tree
+	*	@return pointer to object in hierarchical tree
 	*/
 	BaseClass* find(std::string name);
 
