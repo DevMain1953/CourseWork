@@ -10,7 +10,7 @@
 */
 int main(int argc, char* argv[])
 {
-	RootClass root(NULL);
+	RootClass root(nullptr);
 	root.start();
 	root.showTree();
 

@@ -2,7 +2,7 @@
 
 BaseClass::BaseClass(BaseClass* parent)
 {
-	if (parent != 0)
+	if (parent != nullptr)
 	{
 		parent->children.push_back(this);
 	}
@@ -13,7 +13,7 @@ BaseClass::BaseClass(BaseClass* parent)
 BaseClass::BaseClass(BaseClass* parent, std::string name)
 {
 	this->parent = parent;
-	if (parent != 0)
+	if (parent != nullptr)
 	{
 		parent->children.push_back(this);
 	}
