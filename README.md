@@ -31,9 +31,9 @@ No
 ### Return
 No
 
-### [void BaseClass::ConstructTree(BaseClass* parent, int space)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L86)
+### [void BaseClass::printTree(BaseClass* parent, int space)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L86)
 ### Description
-Constructs and prints hierarchical tree.
+Prints hierarchical tree.
 ### Parameters
 1. parent	- pointer to parent object 
 2. space	- number of spaces in hierarchical tree before branch 
@@ -44,13 +44,13 @@ No
 
 ### [BaseClass* BaseClass::find(std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L65)
 ### Description
-Returns pointer to parent object in hierarchical tree.
+Returns pointer to object in hierarchical tree.
 ### Parameters
 1. name	- object name to find
 ### Note
 This method uses recursive call through pointer in array of subordinate objects.
 ### Return
-Pointer to parent object in hierarchical tree 
+Pointer to object in hierarchical tree 
 
 ### [std::string BaseClass::getName()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L41)
 ### Description
@@ -106,11 +106,11 @@ No
 ## In RootClass class
 ### [void RootClass::showTree()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L57)
 ### Description
-Calls method to construct hierarchical object tree.
+Calls method to print hierarchical object tree.
 ### Parameters
 No
 ### Note
-This method prints "Object tree" before calling method to construct hierarchical object tree.
+This method prints "Object tree" before calling method to print hierarchical object tree.
 ### Return
 No
 
