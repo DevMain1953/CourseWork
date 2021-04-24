@@ -64,7 +64,7 @@ void BaseClass::show()
 
 BaseClass* BaseClass::find(std::string name)
 {
-	BaseClass* temp = NULL;
+	BaseClass* temp = nullptr;
 	if (name == this->getName().c_str())
 	{
 		temp = this;
@@ -74,7 +74,7 @@ BaseClass* BaseClass::find(std::string name)
 		for (int i = 0; i < children.size(); i++)
 		{
 			temp = children[i]->find(name);
-			if (temp != NULL)
+			if (temp != nullptr)
 			{
 				break;
 			}
@@ -83,7 +83,7 @@ BaseClass* BaseClass::find(std::string name)
 	return temp;
 }
 
-void BaseClass::ConstructTree(BaseClass* parent, int space)
+void BaseClass::printTree(BaseClass* parent, int space)
 {
 	for (int i = 0; i < space; i++)
 	{
@@ -93,6 +93,6 @@ void BaseClass::ConstructTree(BaseClass* parent, int space)
 	for (int i = 0; i < parent->children.size(); i++)
 	{
 		std::cout << std::endl;
-		children[i]->ConstructTree(this->children[i], space + 4);
+		children[i]->printTree(this->children[i], space + 4);
 	}
 }

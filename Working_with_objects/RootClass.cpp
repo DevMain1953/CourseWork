@@ -57,5 +57,5 @@ void RootClass::start()
 void RootClass::showTree()
 {
 	std::cout << "Object tree" << std::endl;
-	this->ConstructTree(this, 0);
+	this->printTree(this, 0);
 }

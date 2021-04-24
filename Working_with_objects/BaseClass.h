@@ -16,14 +16,14 @@ protected:
 
 public:
 	/**
-	*	Creates root object in the hierarchy, if such object already exists, creates subordinate object
+	*	Creates object in the hierarchy, if parent object exists, creates subordinate object
 	*
 	*	@param parent - pointer to parent object
 	*/
 	BaseClass(BaseClass* parent);
 
 	/**
-	*	Creates root object in the hierarchy, if such object already exists, creates subordinate object and sets name to it
+	*	Creates object in the hierarchy, if parent object exists, creates subordinate object and sets name to it
 	*
 	*	@param parent - pointer to parent object
 	*	@param name - object name
@@ -74,13 +74,13 @@ public:
 	void show();
 
 	/**
-	*	Constructs and prints hierarchical tree
+	*	Prints hierarchical tree
 	*
 	*	@param parent - pointer to parent object
 	*	@param space - number of spaces in hierarchical tree before branch
 	*	@note This method uses recursive call through pointer in array of subordinate objects
 	*/
-	void ConstructTree(BaseClass* parent, int space);
+	void printTree(BaseClass* parent, int space);
 
 };
 
