@@ -42,7 +42,7 @@ This method uses recursive call through pointer in array of subordinate objects.
 ### Return
 No
 
-### [BaseClass* BaseClass::find(std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L65)
+### [BaseClass* BaseClass::getObjectFromName(std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L65)
 ### Description
 Returns pointer to object in hierarchical tree.
 ### Parameters
@@ -123,3 +123,6 @@ No
 Algorithm is almost same as in previous task, all 5 classes was used.
 ### Return
 No
+
+# New API
+
