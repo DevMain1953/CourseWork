@@ -106,7 +106,7 @@ No
 ## In RootClass class
 ### [void RootClass::showTree()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L57)
 ### Description
-Calls method to print hierarchical object tree.
+Calls method to print hierarchical object tree, calls method to find object using its coordinate in tree (findObjectFromCoordinate).
 ### Parameters
 No
 ### Note
@@ -125,4 +125,28 @@ Algorithm is almost same as in previous task, all 5 classes was used.
 No
 
 # New API
+## In RootClass class
+### void RootClass::findObjectFromCoordinate()
+### Description
+Find object in hierarchical tree using its coordinate and prints search result (object found or not found)
+### Parameters
+No
+### Return
+No
 
+## In BaseClass class
+### BaseClass* BaseClass::getChildFromName(std::string name)
+### Description
+Returns pointer to subordinate object
+### Parameters
+1. name - object name to find
+### Return
+Pointer to subordinate object
+
+### BaseClass* BaseClass::getObjectFromPath(std::string path)
+### Description
+Returns pointer to object using its location in hierarchical tree
+### Parameters
+1. path - path to object
+### Return
+Pointer to object
