@@ -17,7 +17,7 @@ public:
 	void start();
 
 	/**
-	*	Calls method to print hierarchical object tree
+	*	Calls method to print hierarchical object tree, calls method to find object using its coordinate in tree (findObjectFromCoordinate)
 	*
 	*	@note This method prints "Object tree" before calling method to print hierarchical object tree
 	*/

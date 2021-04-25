@@ -20,17 +20,17 @@ void FirstClass::start()
 		std::cin >> obj_name >> class_number >> ready;
 		if (class_number == 2)
 		{
-			base = new SecondClass(find(root), obj_name);
+			base = new SecondClass(getObjectFromName(root), obj_name);
 			base->setReady(ready);
 		}
 		else if (class_number == 3)
 		{
-			base = new ThirdClass(find(root), obj_name);
+			base = new ThirdClass(getObjectFromName(root), obj_name);
 			base->setReady(ready);
 		}
 		else
 		{
-			base = new FourthClass(find(root), obj_name);
+			base = new FourthClass(getObjectFromName(root), obj_name);
 			base->setReady(ready);
 		}
 	}

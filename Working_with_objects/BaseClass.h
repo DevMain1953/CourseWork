@@ -64,7 +64,7 @@ public:
 	*
 	*	@return pointer to object in hierarchical tree
 	*/
-	BaseClass* find(std::string name);
+	BaseClass* getObjectFromName(std::string name);
 
 	/**
 	*	Prints objects and their ready state

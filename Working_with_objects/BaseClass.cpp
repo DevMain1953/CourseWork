@@ -62,7 +62,7 @@ void BaseClass::show()
 	}
 }
 
-BaseClass* BaseClass::find(std::string name)
+BaseClass* BaseClass::getObjectFromName(std::string name)
 {
 	BaseClass* temp = nullptr;
 	if (name == this->getName().c_str())
@@ -73,7 +73,7 @@ BaseClass* BaseClass::find(std::string name)
 	{
 		for (int i = 0; i < children.size(); i++)
 		{
-			temp = children[i]->find(name);
+			temp = children[i]->getObjectFromName(name);
 			if (temp != nullptr)
 			{
 				break;

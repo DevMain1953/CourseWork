@@ -20,7 +20,7 @@ void RootClass::start()
 	while (parent_name != "endtree")
 	{
 		std::cin >> class_name >> number >> ready;
-		parent = this->find(parent_name);
+		parent = this->getObjectFromName(parent_name);
 		if (number == 2)
 		{
 			obj = new FirstClass(parent, class_name);
