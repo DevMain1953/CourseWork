@@ -128,7 +128,7 @@ No
 ## In RootClass class
 ### void RootClass::findObjectFromCoordinate()
 ### Description
-Find object in hierarchical tree using its coordinate and prints search result (object found or not found)
+Finds object in hierarchical tree using its coordinate and prints search result (object found or not found)
 ### Parameters
 No
 ### Return
