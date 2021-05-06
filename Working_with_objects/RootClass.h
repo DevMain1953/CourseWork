@@ -10,7 +10,7 @@ public:
 	using BaseClass::BaseClass; //Using members of base class 
 
 	/**
-	*	Starts algorithm of setting data for hierarchical tree construction
+	*	Starts algorithm of setting data from keyboard for hierarchical tree construction
 	*
 	*	@note Algorithm is almost same as in previous task, all 5 classes was used
 	*/
@@ -22,5 +22,12 @@ public:
 	*	@note This method prints "Object tree" before calling method to print hierarchical object tree
 	*/
 	void showTree();
+
+	/**
+	*	Finds objects in hierarchical tree using their coordinates then prints search result (object found or not found)
+	*
+	*	@note This method prints "Object tree" before calling method to print hierarchical object tree
+	*/
+	void findObjectFromCoordinate();
 };
 #endif

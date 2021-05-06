@@ -13,6 +13,6 @@ int main(int argc, char* argv[])
 	RootClass root(nullptr);
 	root.start();
 	root.showTree();
-
+	
 	return 0;
 }

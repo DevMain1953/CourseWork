@@ -82,6 +82,23 @@ public:
 	*/
 	void printTree(BaseClass* parent, int space);
 
+	/**
+	*	Returns pointer to subordinate object
+	*
+	*	@param name - subordinate object name to find
+	*	@return pointer to subordinate object
+	*/
+	BaseClass* getChildFromName(std::string name);
+
+	/**
+	*	Returns pointer to object using its location in hierarchical tree
+	*
+	*	@param path - path to the object
+	*	@return pointer to object
+	*/
+	BaseClass* getObjectFromPath(std::string path);
+
+
 };
 
 #endif

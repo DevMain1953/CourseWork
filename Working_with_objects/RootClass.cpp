@@ -7,10 +7,10 @@
 
 void RootClass::start()
 {
-	std::string root_name, parent_name, class_name;
-	int number, ready;
+	std::string root_name, parent_name, object_name;
+	int class_number, ready;
 	BaseClass* parent;
-	BaseClass* obj = nullptr;
+	BaseClass* object = nullptr;
 
 	std::cin >> root_name;
 	this->setName(root_name);
@@ -19,43 +19,71 @@ void RootClass::start()
 
 	while (parent_name != "endtree")
 	{
-		std::cin >> class_name >> number >> ready;
-		parent = this->getObjectFromName(parent_name);
-		if (number == 2)
+		std::cin >> object_name >> class_number >> ready;
+		parent = this->getObjectFromPath(parent_name);
+		if (class_number == 2)
 		{
-			obj = new FirstClass(parent, class_name);
-			obj->setReady(ready);
+			object = new FirstClass(parent, object_name);
+			object->setReady(ready);
 		}
-		if (number == 3)
+		if (class_number == 3)
 		{
-			obj = new SecondClass(parent, class_name);
-			obj->setReady(ready);
+			object = new SecondClass(parent, object_name);
+			object->setReady(ready);
+		} if (class_number == 4)
+		{
+			object = new ThirdClass(parent, object_name);
+			object->setReady(ready);
 		}
-		if (number == 4)
+		if (class_number == 5)
 		{
-			obj = new ThirdClass(parent, class_name);
-			obj->setReady(ready);
+			object = new FourthClass(parent, object_name);
+			object->setReady(ready);
 		}
-		if (number == 5)
+		if (class_number == 6)
 		{
-			obj = new FourthClass(parent, class_name);
-			obj->setReady(ready);
-		}
-		if (number == 6)
-		{
-			obj = new FifthClass(parent, class_name);
-			obj->setReady(ready);
+			object = new FifthClass(parent, object_name);
+			object->setReady(ready);
 		}
 		else
 		{
-			obj = nullptr;
+			object = nullptr;
 		}
 		std::cin >> parent_name;
 	}
 }
-
 void RootClass::showTree()
 {
 	std::cout << "Object tree" << std::endl;
 	this->printTree(this, 0);
+	this->findObjectFromCoordinate();
+}
+
+
+void RootClass::findObjectFromCoordinate()
+{
+	std::string address, temp_address;
+	BaseClass* object;
+	std::cin >> address;
+	while (address != "//")
+	{
+		temp_address = address;
+		if (temp_address[0] == '/' && temp_address[1] == '/')
+		{
+			temp_address.erase(temp_address.begin(),
+				temp_address.begin() + 2);
+			object = this->getObjectFromName(temp_address);
+		}
+		else
+		{
+			object = getObjectFromPath(address);
+		}
+		std::cout << std::endl;
+		std::cout << address << " Object ";
+
+		object == nullptr
+			? std::cout << "not found"
+			: std::cout << "name: " << object->getName();
+		std::cin >> address;
+	}
 }

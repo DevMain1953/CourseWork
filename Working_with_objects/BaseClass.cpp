@@ -96,3 +96,41 @@ void BaseClass::printTree(BaseClass* parent, int space)
 		children[i]->printTree(this->children[i], space + 4);
 	}
 }
+
+BaseClass* BaseClass::getChildFromName(std::string name)
+{
+	for (int i = 0; i < children.size(); i++)
+	{
+		if (children[i]->getName() == name)
+		{
+			return children[i];
+		}
+	}
+	return nullptr;
+}
+BaseClass* BaseClass::getObjectFromPath(std::string path)
+{
+	path += '/';
+	std::string object_name = "";
+	BaseClass* object = this;
+	for (int i = 1; i < path.size(); i++)
+	{
+		if (path[i] == '/')
+		{
+			if (object_name != this->getName())
+			{
+				object = object->getChildFromName(object_name);
+				if (object == nullptr)
+				{
+					break;
+				}
+			}
+			object_name = "";
+		}
+		else
+		{
+			object_name += path[i];
+		}
+	}
+	return object;
+}
