@@ -25,8 +25,6 @@ public:
 
 	/**
 	*	Finds objects in hierarchical tree using their coordinates then prints search result (object found or not found)
-	*
-	*	@note This method prints "Object tree" before calling method to print hierarchical object tree
 	*/
 	void findObjectFromCoordinate();
 };

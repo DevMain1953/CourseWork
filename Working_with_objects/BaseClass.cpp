@@ -108,6 +108,7 @@ BaseClass* BaseClass::getChildFromName(std::string name)
 	}
 	return nullptr;
 }
+
 BaseClass* BaseClass::getObjectFromPath(std::string path)
 {
 	path += '/';
