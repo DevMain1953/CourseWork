@@ -4,7 +4,7 @@ This repository contains course work project. The main task is to learn how deve
 ## Class diagram
 ![Class diagram](https://github.com/Pirate1953/CourseWork/blob/master/images/class_diagram.png)
 
-# API docs
+# Task 3.1 - 3.2 API docs
 ## In BaseClass class
 ### [BaseClass::BaseClass(BaseClass* parent)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L3)
 ### Description
@@ -124,7 +124,7 @@ Algorithm is almost same as in previous task, all 5 classes was used.
 ### Return
 No
 
-# New API
+# Task 3.3 API Docs
 ## In RootClass class
 ### void RootClass::findObjectFromCoordinate()
 ### Description
