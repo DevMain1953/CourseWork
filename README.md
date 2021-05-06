@@ -116,7 +116,7 @@ No
 
 ### [void RootClass::start()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L8)
 ### Description
-Starts algorithm of setting data for hierarchical tree construction.
+Starts algorithm of setting data from keyboard for hierarchical tree construction.
 ### Parameters
 No
 ### Note
@@ -128,25 +128,25 @@ No
 ## In RootClass class
 ### void RootClass::findObjectFromCoordinate()
 ### Description
-Finds object in hierarchical tree using its coordinate and prints search result (object found or not found)
+Finds objects in hierarchical tree using their coordinates then prints search result (object found or not found)
 ### Parameters
 No
 ### Return
 No
 
 ## In BaseClass class
-### BaseClass* BaseClass::getChildFromName(std::string name)
+### [void BaseClass::getChildFromName(std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L100)
 ### Description
-Returns pointer to subordinate object
+Returns pointer to subordinate object.
 ### Parameters
-1. name - object name to find
+1. name - subordinate object name to find
 ### Return
 Pointer to subordinate object
 
-### BaseClass* BaseClass::getObjectFromPath(std::string path)
+### [void BaseClass::getObjectFromPath(std::string path)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L111)
 ### Description
-Returns pointer to object using its location in hierarchical tree
+Returns pointer to object using its location in hierarchical tree.
 ### Parameters
-1. path - path to object
+1. path - path to the object
 ### Return
 Pointer to object
