@@ -126,7 +126,7 @@ No
 
 # Task 3.3 API Docs
 ## In RootClass class
-### void RootClass::findObjectFromCoordinate()
+### [void RootClass::findObjectFromCoordinate()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L63)
 ### Description
 Finds objects in hierarchical tree using their coordinates then prints search result (object found or not found)
 ### Parameters
@@ -143,7 +143,7 @@ Returns pointer to subordinate object.
 ### Return
 Pointer to subordinate object
 
-### [void BaseClass::getObjectFromPath(std::string path)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L111)
+### [void BaseClass::getObjectFromPath(std::string path)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L112)
 ### Description
 Returns pointer to object using its location in hierarchical tree.
 ### Parameters
