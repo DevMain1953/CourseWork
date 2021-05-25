@@ -1,12 +1,21 @@
 ﻿  BaseClass.cpp
 C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(25,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(58,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(74,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(93,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(102,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(116,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(62,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(78,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(97,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(106,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(121,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(146,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(162,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(177,20): warning C4018: '<': signed/unsigned mismatch
   FirstClass.cpp
   main.cpp
   RootClass.cpp
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\RootClass.cpp(10,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\RootClass.cpp(125,20): warning C4018: '<': signed/unsigned mismatch
+  SecondClass.cpp
   Generating Code...
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\RootClass.cpp(170): warning C4715: 'RootClass::getSignal': not all control paths return a value
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\RootClass.cpp(186): warning C4715: 'RootClass::getHandler': not all control paths return a value
   Working_with_objects.vcxproj -> C:\Users\sergey\Desktop\CourseWork\Debug\Working_with_objects.exe

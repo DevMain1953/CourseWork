@@ -18,6 +18,21 @@ public:
 	*	Prints result, calls 'show' method
 	*/
 	void printResults();
+
+	/**
+	*	Builds a message text
+	*
+	*	@param text - reference to string to build message
+	*/
+	void Signal(std::string& text);
+
+	/**
+	*	Prints a message
+	*
+	*	@param text - a message to print
+	*/
+	void Handler(std::string text);
+
 };
 
 #endif

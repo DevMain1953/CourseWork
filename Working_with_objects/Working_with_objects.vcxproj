@@ -143,6 +143,7 @@
     <ClCompile Include="FirstClass.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RootClass.cpp" />
+    <ClCompile Include="SecondClass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseClass.h" />

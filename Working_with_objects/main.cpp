@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 {
 	RootClass root(nullptr);
 	root.start();
-	root.showTree();
+	root.app();
 	
 	return 0;
 }

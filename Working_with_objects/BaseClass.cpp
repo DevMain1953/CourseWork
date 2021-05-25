@@ -26,6 +26,10 @@ BaseClass::~BaseClass()
 	{
 		delete children[i];
 	}
+	for (int i = 0; i < connects.size(); i++)
+	{
+		delete connects[i];
+	}
 }
 
 void BaseClass::setReady(int ready)
@@ -134,4 +138,53 @@ BaseClass* BaseClass::getObjectFromPath(std::string path)
 		}
 	}
 	return object;
+}
+
+void BaseClass::setConnection(TYPE_SIGNAL signal, BaseClass* object, TYPE_HANDLER handler)
+{
+	connection_struct* connect;
+	for (int i = 0; i < connects.size(); i++)
+	{
+		if (connects[i]->signal == signal && connects[i]->object == object && connects[i]->handler == handler)
+		{
+			return;
+		}
+	}
+	connect = new connection_struct();
+	connect->signal = signal;
+	connect->object = object;
+	connect->handler = handler;
+	connects.push_back(connect);
+}
+
+void BaseClass::removeConnection(TYPE_SIGNAL signal, BaseClass* object, TYPE_HANDLER handler)
+{
+	for (int i = 0; i < connects.size(); i++)
+	{
+		if (connects[i]->signal == signal && connects[i]->object == object && connects[i]->handler == handler)
+		{
+			delete connects[i];
+			connects.erase(connects.begin() + 1);
+			return;
+		}
+	}
+}
+
+void BaseClass::sendSignal(TYPE_SIGNAL signal, std::string& command)
+{
+	TYPE_HANDLER handler;
+	(this->*signal)(command); //Calls method using pointer to the current object
+	for (int i = 0; i < connects.size(); i++)
+	{
+		if (connects[i]->signal == signal)
+		{
+			handler = connects[i]->handler;
+			(connects[i]->object->*handler)(command); //Calls method using pointer to the object in structure
+		}
+	}
+}
+
+int BaseClass::getNumber()
+{
+	return this->number;
 }

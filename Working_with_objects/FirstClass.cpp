@@ -41,3 +41,13 @@ void FirstClass::printResults()
 	std::cout << "Test result" << std::endl;
 	show();
 }
+
+void FirstClass::Signal(std::string& text)
+{
+	text = " Text: " + this->getName() + " -> " + text;
+}
+
+void FirstClass::Handler(std::string text)
+{
+	std::cout << "\nSignal to " << this->getName() << text;
+}
