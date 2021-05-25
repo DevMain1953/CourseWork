@@ -114,7 +114,7 @@ This method prints "Object tree" before calling method to print hierarchical obj
 ### Return
 No
 
-### [void RootClass::start()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L8)
+### [void RootClass::start()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L16)
 ### Description
 Starts algorithm of setting data from keyboard for hierarchical tree construction.
 ### Parameters
@@ -126,7 +126,7 @@ No
 
 # Task 3.3 API Docs
 ## In RootClass class
-### [void RootClass::findObjectFromCoordinate()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L63)
+### [void RootClass::findObjectFromCoordinate()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L74)
 ### Description
 Finds objects in hierarchical tree using their coordinates then prints search result (object found or not found)
 ### Parameters
@@ -229,3 +229,86 @@ Prints a message
 No
 
 ## In RootClass class
+### RootClass(BaseClass* parent)
+### Description
+Initializes constructor of BaseClass with one parameter
+### Parameters
+1. parent - pointer to parent object
+### Return
+No
+
+### [RootClass::~RootClass()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L8)
+### Description
+Removes array of pointers to structure with connection number, and object names
+### Parameters
+No
+### Return
+No
+
+### [void RootClass::app()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L65)
+### Description
+Calls method to print hierarchical object tree and methods to print and emit signal
+### Parameters
+No
+### Note
+This method prints "Object tree" before calling method to print hierarchical object tree
+### Return
+No
+
+### [void RootClass::Connections()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L102)
+### Description
+Sets connections between objects
+### Parameters
+No
+### Note
+This method uses methods to get pointers to signal and handler methods
+### Return
+No
+
+### [void RootClass::printConnects()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L122)
+### Description
+Prints connections from array of connections
+### Parameters
+No
+### Return
+No
+
+### [void RootClass::emitSignal()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L131)
+### Description
+Emits signal, uses BaseClass method to send signal
+### Parameters
+No
+### Return
+No
+
+### [void RootClass::Signal(std::string& text)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L146)
+### Description
+Builds a message text
+### Parameters
+1. text - reference to string to build message
+### Return
+No
+
+### [void RootClass::Handler(std::string text)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L151)
+### Description
+Prints a message
+### Parameters
+1. text - message to print
+### Return
+No
+
+### [TYPE_SIGNAL RootClass::getSignal(int number)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L156)
+### Description
+Returns pointer to signal method that is casted to pointer to BaseClass method
+### Parameters
+1. number - class number
+### Return
+Pointer to signal method that is casted to pointer to BaseClass method
+
+### [TYPE_HANDLER RootClass::getHandler(int number)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L172)
+### Description
+Returns pointer to handler method that is casted to pointer to BaseClass method
+### Parameters
+1. number - class number
+### Return
+Pointer to handler method that is casted to pointer to BaseClass method
