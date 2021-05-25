@@ -150,3 +150,82 @@ Returns pointer to object using its location in hierarchical tree.
 1. path - path to the object
 ### Return
 Pointer to object
+
+# Task 3.4 API Docs
+## In BaseClass class
+### [void BaseClass::setConnection(TYPE_SIGNAL signal, BaseClass* object, TYPE_HANDLER handler)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L143)
+### Description
+Sets connection between objects
+### Parameters
+1. signal - pointer to signal method
+2. object - pointer to target object
+3. handler - pointer to handler method
+### Note
+Adds new element (pointer to structure that describes connections) to array of pointers
+### Return
+No
+
+### [void BaseClass::removeConnection(TYPE_SIGNAL signal, BaseClass* object, TYPE_HANDLER handler)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L160)
+### Description
+Removes connection
+### Parameters
+1. signal - pointer to signal method
+2. object - pointer to target object
+3. handler - pointer to handler method
+### Note
+Removes pointer to structure that describes connections from array
+### Return
+No
+
+### [void BaseClass::sendSignal(TYPE_SIGNAL signal, std::string& command)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L173)
+### Description
+Sends signal
+### Parameters
+1. signal - pointer to signal method
+2. command - reference to string that contains a message
+### Return
+No
+
+### [int BaseClass::getNumber()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L187)
+### Description
+Returns class number
+### Parameters
+No
+### Return
+Class number
+
+## In FirstClass class
+### [void FirstClass::Signal(std::string& text)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/FirstClass.cpp#L45)
+### Description
+Builds a message text
+### Parameters
+1. text - reference to string to build message
+### Return
+No
+
+### [void FirstClass::Handler(std::string text)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/FirstClass.cpp#L50)
+### Description
+Prints a message
+### Parameters
+1. text - a message to print
+### Return
+No
+
+## In SecondClass class
+### [void SecondClass::Signal(std::string& text)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/SecondClass.cpp#L3)
+### Description
+Builds a message text
+### Parameters
+1. text - reference to string to build message
+### Return
+No
+
+### [void SecondClass::Handler(std::string text)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/SecondClass.cpp#L8)
+### Description
+Prints a message
+### Parameters
+1. text - a message to print
+### Return
+No
+
+## In RootClass class
