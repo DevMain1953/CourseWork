@@ -25,13 +25,13 @@ No
 
 ### [BaseClass::~BaseClass()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L23)
 ### Description
-Removes subordinate objects.
+Removes subordinate objects and connections
 ### Parameters
 No
 ### Return
 No
 
-### [void BaseClass::printTree(BaseClass* parent, int space)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L86)
+### [void BaseClass::printTree(BaseClass* parent, int space)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L90)
 ### Description
 Prints hierarchical tree.
 ### Parameters
@@ -42,7 +42,7 @@ This method uses recursive call through pointer in array of subordinate objects.
 ### Return
 No
 
-### [BaseClass* BaseClass::getObjectFromName(std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L65)
+### [BaseClass* BaseClass::getObjectFromName(std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L69)
 ### Description
 Returns pointer to object in hierarchical tree.
 ### Parameters
@@ -52,7 +52,7 @@ This method uses recursive call through pointer in array of subordinate objects.
 ### Return
 Pointer to object in hierarchical tree 
 
-### [std::string BaseClass::getName()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L41)
+### [std::string BaseClass::getName()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L45)
 ### Description
 Returns object name.
 ### Parameters
@@ -60,7 +60,7 @@ No
 ### Return
 Object name  
 
-### [void BaseClass::setName(std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L36)
+### [void BaseClass::setName(std::string name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L40)
 ### Description
 Sets name to the object.
 ### Parameters
@@ -68,7 +68,7 @@ Sets name to the object.
 ### Return
 No
 
-### [void BaseClass::setReady(int ready)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L31)
+### [void BaseClass::setReady(int ready)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L35)
 ### Description
 Sets ready state to the object.
 ### Parameters
@@ -76,7 +76,7 @@ Sets ready state to the object.
 ### Return
 No
 
-### [void BaseClass::show()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L46)
+### [void BaseClass::show()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/BaseClass.cpp#L50)
 ### Description
 Prints objects and their ready state.
 ### Parameters
