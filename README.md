@@ -103,6 +103,7 @@ No
 ### Return
 No
 
+## In RootClass class
 ### [void RootClass::start()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L16)
 ### Description
 Starts algorithm of setting data from keyboard for hierarchical tree construction.
