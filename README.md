@@ -103,17 +103,6 @@ No
 ### Return
 No
 
-## In RootClass class
-### [void RootClass::showTree()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L57)
-### Description
-Calls method to print hierarchical object tree, calls method to find object using its coordinate in tree (findObjectFromCoordinate).
-### Parameters
-No
-### Note
-This method prints "Object tree" before calling method to print hierarchical object tree.
-### Return
-No
-
 ### [void RootClass::start()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/RootClass.cpp#L16)
 ### Description
 Starts algorithm of setting data from keyboard for hierarchical tree construction.
