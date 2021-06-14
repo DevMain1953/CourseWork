@@ -38,7 +38,7 @@ public:
 	/**
 	* Returns pointer to signal method converted to type of pointer to base class method
 	*
-	* @return Ópointer to signal method converted to type of pointer to base class method
+	* @return pointer to signal method converted to type of pointer to base class method
 	*/
 	static TYPE_SIGNAL getSignal();
 };
