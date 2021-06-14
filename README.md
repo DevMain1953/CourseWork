@@ -305,3 +305,141 @@ Returns pointer to handler method that is casted to pointer to BaseClass method
 1. number - class number
 ### Return
 Pointer to handler method that is casted to pointer to BaseClass method
+
+# Task K_1 API docs
+## In TextFile class
+### [TextFile(BaseClass* parent)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/TextFile.h#L19)
+### Description
+Initializes constructor of base class with one parameter
+### Parameters
+1. parent	- pointer to parent object 
+### Return
+No
+
+### [void TextFile::start()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/TextFile.cpp#L6)
+### Description
+Builds hierarchical object tree and sets connection between 'sender' object and 'target' object
+### Parameters
+No
+### Return
+No
+
+### [void TextFile::app()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/TextFile.cpp#L23)
+### Description
+Starts algorithm to input coordinates and symbol and insert it to text file, at the end method calls method to print content of text file
+### Parameters
+No
+### Return
+No
+
+### [void TextFile::createTextFile(std::string file_name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/TextFile.cpp#L46)
+### Description
+Creates new text file and sets name for it, writes numeric 10x10 matrix of number 8 to file
+### Parameters
+1. file_name - name of file
+### Return
+No
+
+### [void TextFile::Connection()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/TextFile.cpp#L61)
+### Description
+Sets connection between two objects
+### Parameters
+No
+### Note
+This method uses methods to get pointers to signal and handler methods
+### Return
+No
+
+## In CoordinateChecker class
+### [bool CoordinateChecker::checkCoordinates(int x, int y)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/CoordinateChecker.cpp#L3)
+### Description
+Returns true if coordinates of inserting symbol are correct, false otherwise
+### Parameters
+1. x - X coordinate
+2. y - Y coordinate
+### Return
+True if coordinates of inserting symbol are correct, false otherwise
+
+### [void CoordinateChecker::Signal(std::string& message)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/CoordinateChecker.cpp#L8)
+### Description
+Formats string with message that contains coordinates and symbol to insert
+### Parameters
+1. message - reference to string that will store formatted message
+### Return
+No
+
+### [void CoordinateChecker::emitSignal(int x, int y, char symbol)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/CoordinateChecker.cpp#L13)
+### Description
+Checks coordinates of inserting symbol if coordinates are coorect, method emits signal else method prints error message to end of the file. This method uses base class method to send signals
+### Parameters
+1. x - X coordinate
+2. y - Y coordinate
+3. symbol - symbol to insert
+### Return
+No
+
+### [TYPE_SIGNAL CoordinateChecker::getSignal()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/CoordinateChecker.cpp#L35)
+### Description
+Returns pointer to signal method converted to type of pointer to base class method
+### Parameters
+No
+### Return
+Pointer to signal method converted to type of pointer to base class method
+
+## In MatrixInserter class
+### [bool MatrixInserter::isLatin(char symbol)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/MatrixInserter.cpp#L3)
+### Description
+Returns true if symbol is from latin alphabet, false otherwise
+### Parameters
+1. symbol - symbol to check
+### Return
+True if symbol is from latin alphabet, false otherwise
+
+### [TYPE_HANDLER MatrixInserter::getHandler()](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/MatrixInserter.cpp#L8)
+### Description
+Returns pointer to handler method converted to type of pointer to base class method
+### Parameters
+No
+### Return
+Pointer to handler method converted to type of pointer to base class method
+
+### [std::string MatrixInserter::readMatrixFromTextFile(std::string file_name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/MatrixInserter.cpp#L13)
+### Description
+Returns string from text file that contains matrix 10x10
+### Parameters
+1. file_name - name of file to open
+### Return
+String from text file that contains matrix 10x10
+
+### [void MatrixInserter::Handler(std::string message)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/MatrixInserter.cpp#L25)
+### Description
+Performs inserting new symbol to text file, if message contains symbol that is not from latin alphabet, method inserts error message to the end of file
+### Parameters
+1. message - message that contains new symbol and position of inserting
+### Return
+No
+
+### [std::string MatrixInserter::readTextFile(std::string file_name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/MatrixInserter.cpp#L79)
+### Description
+Returns string that contains all data from text file
+### Parameters
+1. file_name - name of file to open
+### Return
+String that contains all data from text file
+
+## In FilePrinter class
+### [std::string FilePrinter::readTextFile(std::string file_name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/FilePrinter.cpp#L3)
+### Description
+Returns string that contains all data from text file
+### Parameters
+1. file_name - name of file to open
+### Return
+String that contains all data from text file
+
+### [void FilePrinter::printFileContent(std::string file_name)](https://github.com/Pirate1953/CourseWork/blob/master/Working_with_objects/FilePrinter.cpp#L15)
+### Description
+Prints content from text file to output stream
+### Parameters
+1. file_name - name of file to open and read
+### Return
+No
