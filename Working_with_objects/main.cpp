@@ -1,4 +1,4 @@
-#include "RootClass.h"
+#include "TextFile.h"
 
 /**
 *	Global function which is start of program. This function is called at program startup after initialization of the non-local objects
@@ -10,9 +10,10 @@
 */
 int main(int argc, char* argv[])
 {
-	RootClass root(nullptr);
-	root.start();
-	root.app();
-	
+	TextFile text_file(nullptr);
+	text_file.start();
+	text_file.app();
+
 	return 0;
+
 }

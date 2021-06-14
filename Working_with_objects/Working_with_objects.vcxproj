@@ -140,18 +140,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BaseClass.cpp" />
+    <ClCompile Include="CoordinateChecker.cpp" />
+    <ClCompile Include="FilePrinter.cpp" />
     <ClCompile Include="FirstClass.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MatrixInserter.cpp" />
     <ClCompile Include="RootClass.cpp" />
     <ClCompile Include="SecondClass.cpp" />
+    <ClCompile Include="TextFile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseClass.h" />
+    <ClInclude Include="CoordinateChecker.h" />
     <ClInclude Include="FifthClass.h" />
+    <ClInclude Include="FilePrinter.h" />
     <ClInclude Include="FirstClass.h" />
     <ClInclude Include="FourthClass.h" />
+    <ClInclude Include="MatrixInserter.h" />
     <ClInclude Include="RootClass.h" />
     <ClInclude Include="SecondClass.h" />
+    <ClInclude Include="TextFile.h" />
     <ClInclude Include="ThirdClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

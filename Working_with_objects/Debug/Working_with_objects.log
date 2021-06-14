@@ -9,13 +9,17 @@ C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(121,20): w
 C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(146,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(162,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\sergey\Desktop\CourseWork\Working_with_objects\BaseClass.cpp(177,20): warning C4018: '<': signed/unsigned mismatch
+  CoordinateChecker.cpp
+  FilePrinter.cpp
   FirstClass.cpp
   main.cpp
+  MatrixInserter.cpp
   RootClass.cpp
 C:\Users\sergey\Desktop\CourseWork\Working_with_objects\RootClass.cpp(10,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\sergey\Desktop\CourseWork\Working_with_objects\RootClass.cpp(125,20): warning C4018: '<': signed/unsigned mismatch
   SecondClass.cpp
+  TextFile.cpp
   Generating Code...
-C:\Users\sergey\Desktop\CourseWork\Working_with_objects\RootClass.cpp(170): warning C4715: 'RootClass::getSignal': not all control paths return a value
 C:\Users\sergey\Desktop\CourseWork\Working_with_objects\RootClass.cpp(186): warning C4715: 'RootClass::getHandler': not all control paths return a value
+C:\Users\sergey\Desktop\CourseWork\Working_with_objects\RootClass.cpp(170): warning C4715: 'RootClass::getSignal': not all control paths return a value
   Working_with_objects.vcxproj -> C:\Users\sergey\Desktop\CourseWork\Debug\Working_with_objects.exe

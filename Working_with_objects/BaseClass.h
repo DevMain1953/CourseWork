@@ -5,7 +5,7 @@
 #include <vector>
 #include <string>
 
-//Declaring pointers to BaseClass methods
+//Declaring aliases for pointers to BaseClass methods
 class BaseClass;
 typedef void (BaseClass::* TYPE_SIGNAL)(std::string&);
 typedef void (BaseClass::* TYPE_HANDLER)(std::string);
